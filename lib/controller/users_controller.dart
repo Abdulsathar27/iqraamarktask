@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iqraamarktask/models/user_model.dart';
 
-
 import '../services/api_service.dart';
 
 class UsersController extends ChangeNotifier {
@@ -13,9 +12,10 @@ class UsersController extends ChangeNotifier {
 
   List<UserModel> users = [];
 
-  Future<void> getUsers() async {
+  Future<void> fetchUsers() async {
     try {
       isLoading = true;
+
       errorMessage = "";
 
       notifyListeners();
@@ -25,7 +25,12 @@ class UsersController extends ChangeNotifier {
       errorMessage = e.toString();
     } finally {
       isLoading = false;
+
       notifyListeners();
     }
+  }
+
+  void initialize() {
+    fetchUsers();
   }
 }
