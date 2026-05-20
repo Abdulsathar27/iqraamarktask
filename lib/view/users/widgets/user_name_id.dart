@@ -54,8 +54,8 @@ class UserNameId extends StatelessWidget {
 
           decoration: BoxDecoration(
             color:
-                AppColors.gold.withOpacity(
-              0.1,
+                AppColors.gold.withValues(
+              alpha: 0.1,
             ),
 
             borderRadius:
@@ -65,7 +65,9 @@ class UserNameId extends StatelessWidget {
 
             border: Border.all(
               color: AppColors.gold
-                  .withOpacity(0.25),
+                  .withValues(
+                    alpha: 0.25,
+                  ),
 
               width:
                   AppSizes.borderWidth,

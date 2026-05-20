@@ -21,7 +21,9 @@ class BackgroundCircles extends StatelessWidget {
               shape: BoxShape.circle,
               border: Border.all(
                 color: AppColors.gold
-                    .withOpacity(0.08),
+                    .withValues(
+                      alpha: 0.08,
+                    ),
                 width: 1,
               ),
             ),
@@ -38,7 +40,9 @@ class BackgroundCircles extends StatelessWidget {
               shape: BoxShape.circle,
               border: Border.all(
                 color: AppColors.gold
-                    .withOpacity(0.12),
+                    .withValues(
+                      alpha: 0.12,
+                    ),
                 width: 1,
               ),
             ),

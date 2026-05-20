@@ -35,7 +35,9 @@ class UsersBodyWidget extends StatelessWidget {
             Icon(
               Icons.error_outline,
               color: AppColors.gold
-                  .withOpacity(0.4),
+                  .withValues(
+                    alpha: 0.4,
+                  ),
               size: AppSizes.errorIconSize,
             ),
 

@@ -77,7 +77,9 @@ class UserListScreen extends StatelessWidget {
                 letterSpacing: 4,
 
                 color: AppColors.gold
-                    .withOpacity(0.8),
+                    .withValues(
+                      alpha: 0.8,
+                    ),
 
                 fontWeight:
                     FontWeight.w500,

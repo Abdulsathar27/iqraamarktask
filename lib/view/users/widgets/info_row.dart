@@ -21,7 +21,9 @@ class InfoRow extends StatelessWidget {
           icon,
           size: AppSizes.infoIconSize,
           color: AppColors.gold
-              .withOpacity(0.6),
+              .withValues(
+                alpha: 0.6,
+              ),
         ),
 
         const SizedBox(

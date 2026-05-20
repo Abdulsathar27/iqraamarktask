@@ -17,9 +17,16 @@ class UserAvatar extends StatelessWidget {
       decoration: BoxDecoration(
         shape: BoxShape.circle,
 
-        border: Border.all(color: AppColors.gold.withOpacity(0.4), width: 1),
+        border: Border.all(
+          color: AppColors.gold.withValues(
+            alpha: 0.4,
+          ),
+          width: 1,
+        ),
 
-        color: AppColors.gold.withOpacity(0.08),
+        color: AppColors.gold.withValues(
+          alpha: 0.08,
+        ),
       ),
 
       child: Center(

@@ -72,7 +72,9 @@ class LoginScreen extends StatelessWidget {
                         letterSpacing: 4,
 
                         color: AppColors.gold
-                            .withOpacity(0.8),
+                            .withValues(
+                              alpha: 0.8,
+                            ),
 
                         fontWeight:
                             FontWeight.w500,
@@ -284,8 +286,8 @@ class LoginScreen extends StatelessWidget {
 
                               color: AppColors
                                   .gold
-                                  .withOpacity(
-                                0.7,
+                                  .withValues(
+                                alpha: 0.7,
                               ),
 
                               fontWeight:
